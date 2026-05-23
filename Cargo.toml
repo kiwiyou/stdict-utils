@@ -2,6 +2,16 @@
 name = "stdict-utils"
 version = "0.1.0"
 edition = "2024"
+default-run = "stdict"
+
+[[bin]]
+name = "inspector"
+path = "src/inspector.rs"
+
+[[bin]]
+name = "stdict"
+path = "src/main.rs"
 
 [dependencies]
+anyhow = "1.0.102"
 quick-xml = "0.40.1"
